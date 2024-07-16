@@ -1,5 +1,5 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 
 # Create your views here.
-def say_hello(request):
-    return HttpResponse("Hello")
+def get_food_list(request):
+    return render(request, 'food/food_list.html')
